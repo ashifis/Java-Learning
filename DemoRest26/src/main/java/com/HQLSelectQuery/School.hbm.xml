@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.HQLSelectQuery.School" table="SCHOOL">
+<id name="roll" column="roll"  type="int"/>
+<property name="classStd" column="classStd"  type="string" />
+<property name="name" column="name" type="string" length="16" />
+<property name="Address" column="Address" type="string" length="120" />
+</class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.RestHB.demo.Customer" table="CUSTOMER">
+<id name="customerId" column="CUSTOMER_ID"  type="long"/>
+<property name="name" column="name"  type="string" />
+<property name="age" column="age" type="int" />
+<property name="creationDate" column="SYS_CREATION_DATE" />
+</class>
+</hibernate-mapping>
