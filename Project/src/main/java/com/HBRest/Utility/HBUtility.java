@@ -6,9 +6,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.StaleObjectStateException;
 import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import org.hibernate.service.ServiceRegistryBuilder;
+//import org.hibernate.service.ServiceRegistryBuilder;
 
 import com.HBRest.Entity.Register;
 
@@ -35,8 +36,12 @@ public class HBUtility {
 		.addAnnotatedClass(Manager.class).addAnnotatedClass(TeamLead.class);
 		.addAnnotatedClass(AlienHB.class)
 		.addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class)*/
-	    srg = new ServiceRegistryBuilder().applySettings(cfg.getProperties()).buildServiceRegistry();
-	    sf = cfg.buildSessionFactory(srg);
+	    //Deprecated in 4.1.1.6
+		//srg = new ServiceRegistryBuilder().applySettings(cfg.getProperties()).buildServiceRegistry();
+		//sf = cfg.buildSessionFactory(srg);
+	    StandardServiceRegistryBuilder srg= new StandardServiceRegistryBuilder().applySettings(cfg.getProperties());
+	     sf= cfg.buildSessionFactory(srg.build());
+	    
 	    
 	    
 	    /*<property name="hibernate.cache.use_second_level_cache">true</property>
