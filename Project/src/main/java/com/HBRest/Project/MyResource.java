@@ -41,7 +41,7 @@ public class MyResource {
     @POST
 	@Path("register")
 	@Consumes({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON,MediaType.APPLICATION_FORM_URLENCODED})
-	public void register( @NotNull @FormParam("first_name") String first_name,
+	public Register register( @NotNull @FormParam("first_name") String first_name,
 			@NotNull @FormParam("last_name") String last_name,
 			@NotNull @FormParam("username") String username,
 			@NotNull @FormParam("password") String password,
@@ -50,7 +50,7 @@ public class MyResource {
     	
     	//first_name,last_name,username,password,address,contact
 		enter("register");
-		/*Register register = new Register();
+		Register register = new Register();
 		register.setUsername(username);
 		register.setAddress(address);
 		register.setContact(contact);
@@ -58,8 +58,10 @@ public class MyResource {
 		register.setUsername(username);
 		register.setFirst_name(first_name);
 		System.out.println(first_name + last_name+username+password+address+contact);
-		hbRestRepository.RegisterUser(register);*/
+		String status = hbRestRepository.RegisterUser(register);
+		register.setUsername(status);
 		enter("register");
+		return register;
 				
 	}
     

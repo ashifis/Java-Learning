@@ -3,8 +3,10 @@ package com.HBRest.Entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
+@XmlRootElement
 public class Register {
 
 	@Column(name =  "FIRST_NAME" , nullable = false)
