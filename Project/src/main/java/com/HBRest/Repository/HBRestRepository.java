@@ -2,6 +2,8 @@ package com.HBRest.Repository;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.HBRest.Entity.Register;
 import com.HBRest.Utility.CommonUtils;
@@ -9,20 +11,23 @@ import com.HBRest.Utility.HBUtility;
 
 
 
-
+@Component
 public class HBRestRepository {
 	
+	@Autowired
+	private HBUtility hbUtils;// = null;
 	
-	private HBUtility hbUtils = null;
-	private CommonUtils commonUtils = null;
+	@Autowired
+	private CommonUtils commonUtils;// = null;
 	
 	public HBRestRepository() {
 		
 		System.out.println("Inside HBRestRepository");
-		
+		/*
 		hbUtils = new HBUtility();
 		
 		commonUtils = new CommonUtils();
+		*/
 		
 	}
 

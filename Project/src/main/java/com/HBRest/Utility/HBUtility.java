@@ -10,12 +10,13 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 //import org.hibernate.service.ServiceRegistryBuilder;
+import org.springframework.stereotype.Component;
 
 import com.HBRest.Entity.Register;
 
 
 
-
+@Component
 public class HBUtility {
 	
 	private Configuration cfg ;

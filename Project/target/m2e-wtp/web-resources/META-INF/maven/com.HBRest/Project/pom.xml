@@ -1,14 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.HBRest</groupId>
     <artifactId>Project</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <parent>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-parent</artifactId>
+	    <version>1.5.6.RELEASE</version>
+	 </parent>
     <name>Project</name>
-
     <build>
         <finalName>Project</finalName>
         <plugins>
@@ -38,7 +40,45 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
+    
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		 <dependency>
+    		<groupId>com.oracle</groupId>
+    		<artifactId>ojdbc6</artifactId>
+    		<version>11.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+   		 	<groupId>org.hibernate.javax.persistence</groupId>
+    	 	<artifactId>hibernate-jpa-2.1-api</artifactId>
+    	 	<version>1.0.0.Final</version>
+		</dependency>
+		
+		<dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
             <artifactId>jersey-container-servlet-core</artifactId>
             <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
@@ -48,59 +88,8 @@
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
         </dependency>
-        <!-- uncomment this to get JSON support
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-binding</artifactId>
-        </dependency>-->
-         <dependency>
-    		<groupId>com.oracle</groupId>
-    		<artifactId>ojdbc6</artifactId>
-    		<version>11.2.0</version>
-		</dependency>
-		<dependency>
-   		 	<groupId>org.hibernate.javax.persistence</groupId>
-    	 	<artifactId>hibernate-jpa-2.1-api</artifactId>
-    	 	<version>1.0.0.Final</version>
-		</dependency>
-		<!--	<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-core</artifactId>
-    		<version>5.3.7.Final</version>
-		</dependency>
-	 https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-		<dependency>
-    	<groupId>org.hibernate</groupId>
-    	<artifactId>hibernate-core</artifactId>
-    	<version>5.3.7.Final</version>
-	</dependency> 
-		<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxrs >
-	<dependency>
-   		 <groupId>org.jboss.resteasy</groupId>
-   		 <artifactId>resteasy-jaxrs</artifactId>
-   		 <version>3.1.4.Final</version>
-	</dependency -->
-	<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
-	<dependency>
-    	<groupId>org.springframework.boot</groupId>
-    	<artifactId>spring-boot-starter-data-jpa</artifactId>
-    	<version>2.1.4.RELEASE</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
-	<dependency>
-   		 <groupId>org.hibernate.javax.persistence</groupId>
-    	 <artifactId>hibernate-jpa-2.1-api</artifactId>
-    	 <version>1.0.0.Final</version>
-	</dependency>
+        
 	
-	<!-- https://mvnrepository.com/artifact/javax.ejb/ejb-api -->
-	<dependency>
-   		 <groupId>javax.ejb</groupId>
-   		 <artifactId>ejb-api</artifactId>
-   		 <version>3.0</version>
-    	 <scope>provided</scope>
-	</dependency>
-    
     </dependencies>
     <properties>
         <jersey.version>2.29.1</jersey.version>

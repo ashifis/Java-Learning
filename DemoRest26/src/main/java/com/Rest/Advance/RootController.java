@@ -1,14 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- This web.xml file is not required when using Servlet 3.0 container,
-     see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-    <servlet>
+package com.Rest.Advance;
+
+import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.Application;
+import javax.ws.rs.core.MediaType;
+
+@ApplicationPath("webapi")
+public class RootController extends Application{
+	
+	
+}
+/*
+     <servlet>
         <servlet-name>Jersey Web Application</servlet-name>
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>jersey.config.server.provider.packages</param-name>
             <!--  param-value>com.RestFul26.DemoRest26,com.RestHB.demo</param-value-->
-             <param-value>com.RestHB.demo,com.RestFul26.DemoRest26,com.Rest.Advance</param-value>
+             <param-value>com.RestHB.demo,com.RestFul26.DemoRest26,com.REST.advanced</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -17,4 +28,5 @@
         <url-pattern>/webapi/*</url-pattern>
         <!-- It will accept those requests which are coming with /webapi/* urls -->
     </servlet-mapping>
-</web-app>
+
+*/

@@ -8,6 +8,10 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import com.HBRest.Entity.Register;
 import com.HBRest.Repository.HBRestRepository;
@@ -17,10 +21,13 @@ import com.HBRest.Repository.HBRestRepository;
 /**
  * Root resource (exposed at "myresource" path)
  */
+@Component
+@Controller
 @Path("myresource")//http://localhost:8080/Project/webapi/myresource1
 public class MyResource {
 	
-	HBRestRepository  hbRestRepository = new HBRestRepository();
+	@Autowired
+	HBRestRepository  hbRestRepository ;//= new HBRestRepository();
 	
 
 	

@@ -6,7 +6,7 @@
 //
 
 
-package friends.xml;
+package com.RestFul26.DemoRest26.friends.xml;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

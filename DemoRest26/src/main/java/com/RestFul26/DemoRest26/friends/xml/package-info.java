@@ -6,4 +6,4 @@
 //
 
 @javax.xml.bind.annotation.XmlSchema(namespace = "http://xml.friends", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package friends.xml;
+package com.RestFul26.DemoRest26.friends.xml;
