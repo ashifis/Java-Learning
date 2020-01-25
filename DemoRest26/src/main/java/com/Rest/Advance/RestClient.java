@@ -13,9 +13,14 @@ public class RestClient {
 	
 	public static void main(String args[]) {
 		
+		
+		
 		Client cl = ClientBuilder.newClient();
-		WebTarget target =  cl.target("http://localhost:8080/DemoRest26/webapi/callclient");//Give it a target to point to . client to be inited once per application
-		Builder builder =	(Builder) target.request();
+		WebTarget basetarget =  cl.target("http://localhost:8080/DemoRest26/webapi/");
+		
+		WebTarget messageTarge = basetarget.path("callclient");
+		//WebTarget target =  cl.target("http://localhost:8080/DemoRest26/webapi/callclient");//Give it a target to point to . client to be inited once per application
+		Builder builder =	(Builder) messageTarge.request();
 		Response  response =  builder.get();
 		CreateClient client = response.readEntity(CreateClient.class);
 		
