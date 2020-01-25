@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.HBCompositePrimaryKeys.Product" table="Product_Composite">
+<composite-id>
+<key-property name="productId" column="pid"  />
+<key-property name="productNane" column="pname" length="10" />
+</composite-id>
+<property name="price"></property>
+</class>
+</hibernate-mapping>

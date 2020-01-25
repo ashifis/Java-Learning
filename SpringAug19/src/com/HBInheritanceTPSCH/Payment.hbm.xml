@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.HBInheritanceTPSCH.Payment" table="PAYMENT_SCH">
+
+<id name="paymentID" column="payment_ID" />
+<property name="amount" column="amount" />
+<property name="paymentType" column="payment_type" />
+
+<joined-subclass 	name="com.HBInheritanceTPSCH.CreditCard" table="CREDIT_CARD_SCH">
+<key column="PAYMENT_ID" />
+<property name="creditCardType" column="creditCard_Type"></property>
+</joined-subclass>
+
+
+<joined-subclass 	name="com.HBInheritanceTPSCH.Cheque" table="CHEQUE_SCH">
+<key column="PAYMENT_ID" />
+<property name="chequeType" column="cheque_Type"></property>
+</joined-subclass>
+
+</class>
+</hibernate-mapping>

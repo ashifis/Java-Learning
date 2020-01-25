@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/aop.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/core.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/ibatis.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/j2ee.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/javaconfig.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/misc.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/persistCore.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/persistJdbc.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/persistJDO.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/remoting.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/test.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars/springjars/web.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spcorejars/spcorejars/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spcorejars/spcorejars/com.springsource.org.apache.log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spcorejars/spcorejars/jmxtools-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spcorejars/spcorejars/org.springframework.beans-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spcorejars/spcorejars/org.springframework.context-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spcorejars/spcorejars/org.springframework.core-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spcorejars/spcorejars/org.springframework.expression-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spring-asm-3.1.2.release-sources.jar/spring-asm-3.1.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/org.springframework.expression-3.0.1.release.jar/org.springframework.expression-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.aspectj.weaver_1.7.0.20120703164200/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="D:/eclipse/plugins/org.aspectj.runtime_1.7.0.20120703164200/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars (1)/springjars/aop/aop/com.springsource.net.sf.cglib-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars (1)/springjars/aop/aop/com.springsource.org.aopalliance-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars (1)/springjars/aop/aop/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars (1)/springjars/aop/aop/org.springframework.aop-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars (1)/springjars/aop/aop/org.springframework.aspects-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars (1)/springjars/aop/aop/org.springframework.instrument.tomcat-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/springjars (1)/springjars/aop/aop/org.springframework.instrument-3.0.1.RELEASE-A.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/org.springframework.expression-3.0.1.release.jar (1)/org.springframework.expression-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/org.springframework.asm-3.0.1.release.jar/org.springframework.asm-3.0.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/org.springframework.jdbc-3.0.2.release.jar/org.springframework.jdbc-3.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/org.springframework.transaction-3.0.0.release.jar/org.springframework.transaction-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/org.springframework.orm-3.1.2.release.jar/org.springframework.orm-3.1.2.release.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/spring-tx-3.2.3.release.jar/spring-tx-3.2.3.release.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/infinispan-core-4.2.1.CR1.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/jbosscache-core-3.2.1.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/oscache-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/proxool-0.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Hibernate-Library/swarmcache-1.0RC2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ASHIF/Downloads/hibernate-core-4.3.0.beta1.jar/hibernate-core-4.3.0.beta1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
