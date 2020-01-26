@@ -33,7 +33,7 @@
    </bean>
    
    <bean id = "circle" class = "com.spring.JavaBrains.Circle" >
-   		<property name="pointC" ref="pointC"></property>
+   		<!-- property name="pointC" ref="pointC"></property -->
    </bean>
    
    
@@ -42,4 +42,11 @@
    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
    	<property name="locations" value="classpath:com/spring/JavaBrains/PointsConfig.properties"></property>  	
    </bean> 
+   
+   	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+   
+   
 </beans>
+
+
+

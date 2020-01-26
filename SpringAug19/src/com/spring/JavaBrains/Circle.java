@@ -1,5 +1,7 @@
 package com.spring.JavaBrains;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Circle  implements Shape{
 
 	
@@ -9,6 +11,8 @@ public class Circle  implements Shape{
 		return pointC;
 	}
 
+	
+	@Required
 	public void setPointC(Point pointC) {
 		this.pointC = pointC;
 	}
